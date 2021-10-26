@@ -1,0 +1,26 @@
+
+  <table class="table table-striped w-50">
+    <thead>
+      <!-- <th scope="col">Patient Name</th> -->
+
+       <th>Bill paid</th>
+       <!-- <th scope="col">Test Name</th> -->
+       <!-- <th scope="col">Bill Paid</th> -->
+       <th scope="col">Discount</th>
+       <th scope="col">Net</th>
+       <th scope="col">date</th>
+       
+    </thead>
+    <tbody>
+       <tr *ngFor="let bill of Bills; index as i; first as isFirst">
+        <td> {{ bill.bill_paid}} </td>
+
+          <!-- <td> {{ bill.bill_paid}} </td>
+          <td> {{ bill.bill_paid}} </td> -->
+
+          <td> {{ bill.Discount}} </td>
+          <td> {{ bill.Net}} </td>
+          <td> {{ bill.date}} </td>
+       </tr>
+    </tbody>
+ </table>

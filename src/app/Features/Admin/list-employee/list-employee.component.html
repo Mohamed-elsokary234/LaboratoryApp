@@ -1,0 +1,40 @@
+<div class="container-fluid" style="background-image: url('../../../../assets/images/background.PNG');">
+ 
+  <a id="bt" routerLink="/admin/ListTest/admin/addEmployee"type="button" class="btn btn-success btn-lg">Add Employee</a>
+<table class="table table-striped table-light" style="border: 2px solid black;">
+  <thead class="bg-dark text-light">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Address</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Qualifications</th>
+        <th scope="col">Work_Period</th>
+        <th scope="col">Email</th>
+        <th scope="col">Job</th>
+      
+        <th colspan="2">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngfor="let item of listEmployees">
+        <th scope="row">{{item.empl_Id}}</th>
+          <td>{{item.empl_name}}</td>
+          <td>{{item.empl_phone}}</td>
+          <td>{{item.empl_address}}</td>
+          <td>{{item.empl_salary }}</td>
+            <td>{{item.empl_quantification }}</td>
+            <td>{{item.empl_work_period }}</td>
+            <td>{{ item.empl_email}}</td>
+            <td>{{item.job_Id_fk}}</td>
+         
+          <td><a routerLink="/admin/ListEmployee/admin/EditEmployee" type="button" class="btn btn-info">Edit</a></td>
+        <td><a routerLink="/admin/ListEmployee/admin/DeleteEmployee" type="button" class="btn btn-danger">Delete</a></td>
+      </tr>
+      <!-- {{id}} -->
+     
+  </tbody>
+</table>
+

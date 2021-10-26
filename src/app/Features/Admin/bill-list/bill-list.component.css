@@ -1,0 +1,14 @@
+#bil{height: 100px;}
+.container-fluid{
+        min-height:100vh;
+		margin-top:0px;
+		background-size: cover;
+	width:100%;
+   align-items: center;  
+   scroll-behavior: unset; 
+}
+
+table{width: 70%; margin-left: 250px;margin-top: 100px;}
+
+td,th{text-align: center;}
+#bt{margin-left:1400px; background-color: #1caa1cbd;margin-top:200px;margin-bottom:2px;}

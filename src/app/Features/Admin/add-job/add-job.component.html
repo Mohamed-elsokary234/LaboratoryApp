@@ -1,0 +1,28 @@
+
+		<div class="wrapper" style="background-image: url('../../../../assets/images/bg-registration-form-2.jpg');">
+			<div class="inner">
+				<form  [formGroup]="form" class="">
+					<h3>Creat Job</h3>
+					<input type="text" class="form-control"[(ngModel)]="jobId"  formControlName="job_Id" placeholder="Job Id" disabled>
+				<!-- <div class=" alert alert-danger" *ngIf="JobId.touched && JobId.invalid"> Job Id is required</div> -->
+
+						<div class="form-wrapper">
+						
+							<input type="text" class="form-control"[(ngModel)]="jobname"  formControlName="job_name" placeholder="Job Name">
+						   <!-- <div class=" alert alert-danger" *ngIf="Jobname.touched && Jobname.invalid"> Job name is required</div> -->
+
+						</div>
+         
+          
+          <div class="form-wrapper">
+					
+						<input type="text" class="form-control" [(ngModel)]="Discriptions"  formControlName="job_discription" placeholder="Discription">
+						<!-- <div class="alert alert-danger" *ngIf="Discription.touched && Discription.invalid"> Job discription is required</div> -->
+
+          </div>
+         
+					<button  type="submit" class="btn btn-success" (click)="createJob()">Add</button>
+				</form>
+			</div>
+		</div>
+		

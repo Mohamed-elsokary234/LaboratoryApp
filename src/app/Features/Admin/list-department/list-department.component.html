@@ -1,0 +1,18 @@
+<!-- <p>list-department works!</p>
+<li *ngFor="let dept of listDepartments; index as i; first as isFirst">
+   {{ dept.dep_id}}
+   {{ dept.dep_name}}
+  </li>
+
+  <h1>{{listDepartments[0].dep_name}}</h1> -->
+
+  <table class="table table-striped w-50">
+    <thead>
+       <th>Department Name</th>
+    </thead>
+    <tbody>
+       <tr *ngFor="let dept of listDepartments; index as i; first as isFirst">
+          <td> {{ dept.dep_name}} </td>
+       </tr>
+    </tbody>
+ </table>

@@ -1,0 +1,11 @@
+#reg{margin-left: 500px;}
+a{margin: 20px; color: white;}
+#KirOut{margin-left: 480px}
+.container-fluid{
+    min-height:100vh;
+    margin-top:0px;
+    background-size: cover;
+width:100%;
+align-items: center;  
+scroll-behavior: unset; 
+}

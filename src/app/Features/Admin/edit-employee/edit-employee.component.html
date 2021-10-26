@@ -1,0 +1,70 @@
+<div class="wrapper" style="background-image: url('../../../../assets/images/bg-registration-form-2.jpg');">
+	<div class="inner">
+		<form action="">
+			<h3>ADD Employee</h3>
+			<div class="form-group "> 
+				<label>Employee ID</label>
+				<input type="number" class="form-control" formControlName="empl_Id" [(ngModel)]="emplId"/>
+				<div class=" alert alert-danger" *ngIf="Empl_Id.touched && Empl_Id.invalid">empl_Id is required</div>
+			</div>
+			<div class="form-group "> 
+				<label>Employee Name</label>
+				<input type="text" class="form-control" formControlName="empl_name" [(ngModel)]="emplname"/>
+				<div class=" alert alert-danger" *ngIf="Empl_name.touched && Empl_name.invalid">empl_name is required</div>
+			</div>
+			<div class="form-group "> 
+				<label>Employee phone</label>
+				<input type="text" class="form-control" formControlName=" empl_phone" [(ngModel)]=" emplphone"/>
+				<div class=" alert alert-danger" *ngIf=" Empl_phone.touched &&  Empl_phone.invalid"> empl_phone is required</div>
+			</div>
+			<div class="form-group "> 
+				<label>Employee Address</label>
+				<input type="text" class="form-control" formControlName=" empl_address" [(ngModel)]=" empladdress"/>
+				<div class=" alert alert-danger" *ngIf=" Empl_address.touched && Empl_address.invalid"> empl_address is required</div>
+			</div>
+			<div class="form-group "> 
+				<label>Employee Salary</label>
+				<input type="number" class="form-control" formControlName=" empl_salary" [(ngModel)]="emplsalary"/>
+				<div class=" alert alert-danger" *ngIf="Empl_salary.touched && Empl_salary.invalid"> empl_salary is required</div>
+			</div>
+			<div class="form-group "> 
+				<label>Employee quantification</label>
+				<input type="text" class="form-control" formControlName="empl_quantification" [(ngModel)]="emplquantification"/>
+				<div class=" alert alert-danger" *ngIf="Empl_quantification.touched && Empl_quantification.invalid"> empl_quantification is required</div>
+			</div>
+			<div class="form-group "> 
+				<label>Employee work_period</label>
+				<input type="text" class="form-control" formControlName="empl_work_period" [(ngModel)]="emplwork_period"/>
+				<div class=" alert alert-danger" *ngIf="Empl_work_period.touched && Empl_work_period.invalid"> empl_work_period is required</div>
+			</div>
+			<div class="form-group "> 
+				<label>Employee email</label>
+				<input type="text" class="form-control" formControlName="empl_email" [(ngModel)]="emplemail"/>
+				<div class=" alert alert-danger" *ngIf="Empl_email.touched && Empl_email.invalid"> empl_email is required</div>
+			</div>
+			<div class="form-group "> 
+				<label>Employee job_Id_fk</label>
+				<input type="number" class="form-control" formControlName="job_Id_fk" [(ngModel)]="jobId_fk"/>
+				<div class=" alert alert-danger" *ngIf="Job_Id_fk.touched && Job_Id_fk.invalid"> job_Id_fk is required</div>
+			</div>
+
+			
+	<select id="menue" class="custom-select" style="width:200px; background-color: DodgerBlue;">
+		<option  class="item" selected>Doctor</option>
+		<option  value="1">Resiptionist</option>
+	  </select>
+	 
+	<div class="form-group">
+		<input type="button" [disabled]="!form.valid" (click)="editEmployee()" value="edit Employee" />
+	</div>
+
+ 
+
+		</form>
+	</div>
+</div>
+
+
+
+
+	

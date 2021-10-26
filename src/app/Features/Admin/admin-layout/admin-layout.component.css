@@ -1,0 +1,31 @@
+#reg{margin-left: 500px;}
+a{margin: 20px; color: white;}
+#KirOut{
+    margin-left: 100px;
+    /* background-color: aqua; */
+    width: 250px;
+
+}
+.container-fluid{
+    min-height:100vh;
+    margin-top:0px;
+    background-size: cover;
+    width:100%;
+    align-items: center;  
+    scroll-behavior: unset; 
+}
+
+/* ------------------------- */
+
+/* .container-fluid{
+    min-height:100vh;
+    margin-top:0px;
+    background-size: cover;
+width:100%;
+align-items: center;   
+}
+
+table{width: 70%; margin-left: 250px; margin-top:5px;}
+
+td,th{text-align: center;}
+#bt{margin-left:1000px; background-color: #1caa1cbd;margin-top:200px;margin-bottom:2px;} */
